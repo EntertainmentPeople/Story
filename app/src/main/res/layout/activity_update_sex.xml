@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleStytle">
+        <ImageView
+            android:id="@+id/iv_updatesex_back"
+            style="@style/TitltImage" />
+
+        <TextView
+            style="@style/TitleText"
+            android:text="修改性别" />
+
+        <ImageView
+            android:id="@+id/iv_updatesex_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_save"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_updatesex_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <RadioButton
+            android:id="@+id/rb_updatesex_man"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:background="@drawable/edit_bg"
+            android:padding="10dp"
+            android:drawableRight="@drawable/radio_sex_selector"
+            android:textSize="25sp"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/rb_updatesex_woman"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:background="@drawable/edit_bg"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/radio_sex_selector"
+            android:text="女"/>
+    </RadioGroup>
+</LinearLayout>

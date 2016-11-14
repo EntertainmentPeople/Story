@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleStytle">
+
+        <ImageView
+            android:id="@+id/iv_updatepwd_back"
+            style="@style/TitltImage" />
+
+        <TextView
+            style="@style/TitleText"
+            android:text="修改密码" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="原 密  码：" />
+        <EditText
+            android:id="@+id/et_updatepwd_oldpwd"
+            style="@style/MineItemTextViewValue"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="新 密  码：" />
+        <EditText
+            android:id="@+id/et_updatepwd_newpwd"
+            style="@style/MineItemTextViewValue"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="重复密码：" />
+        <EditText
+            android:id="@+id/et_updatepwd_repwd"
+            style="@style/MineItemTextViewValue"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_updatepwd_updatepwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottm_bg"
+        android:text="修改密码"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</LinearLayout>

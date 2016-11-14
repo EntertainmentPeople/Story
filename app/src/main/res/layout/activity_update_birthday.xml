@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleStytle">
+
+        <ImageView
+            android:id="@+id/iv_updatebirthday_back"
+            style="@style/TitltImage" />
+
+        <TextView
+            style="@style/TitleText"
+            android:text="修改生日" />
+
+        <ImageView
+            android:id="@+id/iv_updatebirthday_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_save"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="生 日：" />
+
+        <EditText
+            android:id="@+id/et_updatebirthday_birthday"
+            android:inputType="date"
+            style="@style/MineItemTextViewValue" />
+
+    </LinearLayout>
+</LinearLayout>

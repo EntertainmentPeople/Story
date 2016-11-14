@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7E7E7">
+
+    <RelativeLayout style="@style/TitleStytle">
+        <ImageView
+            android:id="@+id/iv_mine_back"
+            style="@style/TitltImage" />
+        <TextView
+            style="@style/TitleText"
+            android:text="个人中心" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_mine_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_portrait" />
+
+    <LinearLayout
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="账 号：" />
+        <TextView
+            android:id="@+id/tv_mine_account"
+            style="@style/MineItemTextViewValue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_nickname"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="昵 称：" />
+
+        <TextView
+            android:id="@+id/tv_mine_nickname"
+            style="@style/MineItemTextViewValue" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_sex"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="性 别：" />
+        <ImageView
+            android:id="@+id/iv_mine_sex"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/tv_mine_sex"
+            style="@style/MineItemTextViewValue" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_email"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="邮 箱：" />
+
+        <TextView
+            android:id="@+id/tv_mine_email"
+            style="@style/MineItemTextViewValue" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_birthday"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:text="生 日：" />
+
+        <TextView
+            android:id="@+id/tv_mine_birthday"
+            style="@style/MineItemTextViewValue" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mine_updatepwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottm_bg"
+        android:text="修改密码"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

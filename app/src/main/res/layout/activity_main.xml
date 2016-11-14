@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main_toolbar"
+        style="@style/TitleStytle">
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_log"
+            android:clickable="true" />
+
+        <RadioGroup
+            android:id="@+id/rg_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_news"
+                style="@style/RadioButton"
+                android:checked="true"
+                android:text="最新" />
+
+            <RadioButton
+                android:id="@+id/rb_hots"
+                style="@style/RadioButton"
+                android:text="最热" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_edit"
+            android:clickable="true" />
+    </RelativeLayout>
+
+
+    <com.klj.story.view.MySlidingPaneLayout
+        android:id="@+id/spl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_main_toolbar"
+        android:gravity="start">
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:background="#262626"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_menu_home"
+                style="@style/MenuLinerLayout">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_home" />
+
+                <TextView
+                    style="@style/MenuTextView"
+                    android:text="往事杂谈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_mystory"
+                style="@style/MenuLinerLayout"
+                android:layout_below="@+id/ll_menu_home">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_mystory" />
+
+                <TextView
+                    style="@style/MenuTextView"
+                    android:text="我的故事" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_recode"
+                style="@style/MenuLinerLayout"
+                android:layout_below="@+id/ll_menu_mystory">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_record" />
+
+                <TextView
+                    style="@style/MenuTextView"
+                    android:text="浏览记录" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_mine"
+                style="@style/MenuLinerLayout"
+                android:layout_below="@+id/ll_menu_recode">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_mine" />
+
+                <TextView
+                    style="@style/MenuTextView"
+                    android:text="个人信息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_setting"
+                style="@style/MenuLinerLayout"
+                android:layout_below="@+id/ll_menu_mine">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_setting" />
+
+                <TextView
+                    style="@style/MenuTextView"
+                    android:text="系统设置" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_menu_exit"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:background="#EA2222"
+                android:text="退　出"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.klj.story.view.MySlidingPaneLayout>
+</RelativeLayout>

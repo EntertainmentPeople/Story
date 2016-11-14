@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <RelativeLayout style="@style/TitleStytle">
+
+        <ImageView
+            android:id="@+id/iv_newstory_back"
+            style="@style/TitltImage" />
+
+        <TextView
+            style="@style/TitleText"
+            android:text="新的故事" />
+
+        <ImageView
+            android:id="@+id/iv_newstory_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_send"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/et_newstory_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textSize="20sp"
+        android:hint="诉说属于你的故事"
+        />
+    <ListView
+        android:layout_margin="5dp"
+        android:id="@+id/lv_newstory_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_newstory_album"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/icon_album"
+            android:layout_marginRight="1dp"/>
+        <Button
+            android:id="@+id/btn_newstory_camera"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/icon_camera"/>
+    </LinearLayout>
+</LinearLayout>

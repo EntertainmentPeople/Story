@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleStytle">
+
+        <ImageView
+            android:id="@+id/iv_mine_back"
+            style="@style/TitltImage" />
+
+        <TextView
+            style="@style/TitleText"
+            android:text="设　 置" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_encourage"
+        style="@style/MineItemLinearLayout"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="鼓励我们" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_donate"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="捐助我们" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_message"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="系统消息" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_update"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="检查更新" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_problem"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="常见问题" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_about"
+        style="@style/MineItemLinearLayout">
+
+        <TextView
+            style="@style/MineItemTextView"
+            android:layout_weight="1"
+            android:text="关于我们" />
+
+        <ImageView style="@style/MineItemImage" />
+    </LinearLayout>
+
+</LinearLayout>
